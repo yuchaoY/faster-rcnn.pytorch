@@ -148,6 +148,13 @@ class sampler(Sampler):
 if __name__ == '__main__':
 
   args = parse_args()
+  args.dataset = 'pascal_voc'
+  args.net = 'vgg16'
+  args.bs = 24
+  args.nw = 4
+  args.cuda =True
+  args.mGPUs = True
+  args.use_tfb = True
 
   print('Called with args:')
   print(args)
